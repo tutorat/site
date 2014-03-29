@@ -14,13 +14,9 @@
     </div>
     <div class="field">
       <%= form.label :message, :as => :text, :required => false, :input_html => {:rows => 10} %>
-      <%= form.text_field :subject %>
+      <%= form.text_field :message %>
     </div>
-    
-    <div class="field">
-      <%= form.label :body %>
-      <%= form.text_area :body %>
-    </div>
+
   </fieldset>
   
   <fieldset class="actions">

@@ -4,6 +4,14 @@
 /* mixins, variables, etc. */
 $grayMediumLight: #eaeaea;
 
+$yellow: #f9d713;
+$lightBlue: #5cdbcf;
+$pink: #ec448f;
+
+$darkPurple: #54374d;
+$lightPurple: #553a74;
+$orangeyRed: #e6390b;
+$teal: #5acf88;
 
 /* Universal */
 
@@ -30,6 +38,10 @@ textarea {
   }
 }
 
+.home-body {
+  background-color: $lightPurple;
+}
+
 
 /* typography */
 
@@ -50,7 +62,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $grayMediumLight;
 }
 
 p {
@@ -61,19 +73,39 @@ p {
 
 /* Header */
 
-#logo {
- 	float: left;
-  	margin-right: 10px;
-  	font-size: 1.7em;
-  	color: #fff;
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
+}
+
+.navbar-inner {
+  background-color: $darkPurple;
+  border: 0;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  height : 70px;
+
+
+}
+
+#navigation-element {
+ 	  float: left;
+  	margin-right: 0px;
+  	font-size: 2em;
+  	color: $lightBlue;
   	text-transform: uppercase;
-  	letter-spacing: -1px;
-  	padding-top: 9px;
+  	letter-spacing: 0px;
+  	padding-top: 35px;
   	font-weight: bold;
-  	line-height: 1;
+  	line-height: 0;
+
   	&:hover {
- 	color: #fff;
-  	text-decoration: none;
+    color: #fff;
+    font-size: 2.1em;
+  	
 	}
 }
 
@@ -84,7 +116,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: $grayLight;
+  color: $grayMediumLight;
   a {
     color: #555;
     &:hover {
