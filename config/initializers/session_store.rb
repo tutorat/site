@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-TutorSite::Application.config.session_store :cookie_store, key: '_tutor_site_session'
+SampleApp::Application.config.session_store :cookie_store, key: '_sample_app_session'
