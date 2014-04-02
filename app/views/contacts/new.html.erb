@@ -1,12 +1,19 @@
   
-<div id="container" >
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |form| %>
-      <%= form.input :name, :require => true %>
-      <%= form.input :email , :require => true  %>
-      <%= form.input :message, :as => :text, :required => false, :input_html => {:rows => 10} %>
-      
+<body>
+	<div class="container center" >
+	  <div class = "pad-25"></div>
+		<div class="col-lg-5 col-lg-offset-3 col-sm-5 col-sm-offset-3 contact-form">
+		  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |form| %>
 
-      <div class="hidden" > <%= form.input :nickname, :hint =>'Leave this field blank' %> </div>
-      <%= form.button :submit, "Send", :class=> "btn btn-primary"%>
-  <% end %>
-</div>
+		      <%= form.input :name, :require => true, :label => 'Votre Nom'%>
+		      <%= form.input :email , :require => true, :label =>'Votre Courriel'  %>
+		      <%= form.input :message, :as => :text, :required => false, :input_html => {:rows => 10, :style=> 'width: 400px'}, :label => 'Votre Demande', :hint => 'Ex: Questions, heures de disponibilité, sujets à couvrir' %>
+		      
+
+		      <div class="hidden" > <%= form.input :nickname, :hint =>'Leave this field blank' %> </div>
+		      <%= form.button :submit, "Envoyer", :class=> "btn btn-light-blue"%>
+		  <% end %>
+		  <div class = "pad-25"></div>
+		</div>
+	</div>
+</body>

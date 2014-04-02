@@ -87,6 +87,17 @@ h1{
 	
 	h3{
 	}
+	a{
+		font-size: 5em;
+		color: $lightBlue;
+	}
+}
+
+.contact-form{
+	color: $lightBlue;
+	border-color: $lightBlue;
+	border-width: 7px;
+	border-style: solid;
 }
 
 
@@ -108,6 +119,11 @@ h1{
 
 .pad{
 	padding-bottom: 50px;
+
+}
+
+.pad-25{
+	padding-bottom: 25px;
 
 }
 
@@ -147,3 +163,17 @@ h1{
 
 .navbar-left{}
 .navbar-right{}
+
+.strong{
+	color: #FFF;
+}
+
+.btn-light-blue{
+	background-color: $lightBlue;
+	color: $lightPurple;
+	font-weight:700;
+	font-size: 1.5em;
+	border-style:solid;
+	border-color: #FFF;
+	border-width: 2px;
+}
