@@ -20,6 +20,7 @@ group :development, :test do
 	gem 'guard-livereload'
 	gem 'rack-livereload'
 	gem 'guard-bundler'
+  gem 'foreman'
 # }
 end
 
