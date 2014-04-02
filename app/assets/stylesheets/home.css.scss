@@ -54,14 +54,14 @@ h1{
 	padding-bottom: 50px;
 	padding-top: 50px;
 	color: $lightBlue;
-	background-color: $orangeyRed;
+	background-color: $lightPurple;
 	h2{
-		color: #FFF;
+		color: $lightBlue;
 		text-decoration:underline;
 
 	}
 	p{
-		color: #FFF;
+		color: $lightBlue;
 
 		font-size: 1.5em;
 	}
@@ -71,23 +71,21 @@ h1{
 .payment{
 	padding-bottom: 50px;
 	padding-top: 50px;
-	color: $orangeyRed;
-	background-color: $teal;
+	color: $lightPurple;
+	background-color: $lightBlue;
 
 }
 
 .contact {
-	color: #FFF;
+	color: $lightBlue;
 	background-color: $lightPurple;
 	padding-bottom: 50px;
 	padding-top: 50px;
 	h1{
 		font-size: 5em;
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 	}
 	
 	h3{
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 	}
 }
 
@@ -98,6 +96,24 @@ h1{
   }
 }
 
+
+.line-separator{
+	
+	height:1px;
+
+
+	border-bottom:1px solid $lightBlue;
+
+}
+
+.pad{
+	padding-bottom: 50px;
+
+}
+
+.white{
+	color:white;
+}
 
 .navigation-element{
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
